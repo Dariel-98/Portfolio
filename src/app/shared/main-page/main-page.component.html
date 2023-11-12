@@ -1,0 +1,21 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav mode="push">
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Search..." value="" />
+      </mat-form-field>
+    </form>
+
+    <mat-list role="list">
+      <mat-list-item role="listitem">Item 1</mat-list-item>
+      <mat-list-item role="listitem">Item 2</mat-list-item>
+      <mat-list-item role="listitem">Item 3</mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Company Portfolio Components</span>
+  </mat-toolbar>
+</mat-sidenav-container>
