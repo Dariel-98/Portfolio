@@ -6,6 +6,7 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRouterModule } from './app-router.module';
 import { PagesModuleModule } from './pages/pages-module.module';
+import { SplitterModule } from 'primeng/splitter';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,7 +16,9 @@ import { PagesModuleModule } from './pages/pages-module.module';
     SharedModule,
     BrowserAnimationsModule,
     PagesModuleModule,
+    SplitterModule,
   ],
+  exports: [SplitterModule],
   providers: [],
   bootstrap: [AppComponent],
 })

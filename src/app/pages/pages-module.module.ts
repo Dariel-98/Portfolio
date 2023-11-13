@@ -5,6 +5,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { DatatablesComponent } from './datatables/datatables.component';
 import { FormsComponent } from './forms/forms.component';
 import { PrincipalComponent } from './principal/principal.component';
+import { SplitterModule } from 'primeng/splitter';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,6 @@ import { PrincipalComponent } from './principal/principal.component';
     FormsComponent,
     PrincipalComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, SplitterModule],
 })
 export class PagesModuleModule {}

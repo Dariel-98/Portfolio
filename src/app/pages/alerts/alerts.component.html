@@ -1,1 +1,59 @@
-<p>alerts works!</p>
+<div class="p-2 col-6">
+  <h4><strong>Alerts</strong></h4>
+  <p>Danger:</p>
+
+  <div
+    class="alert alert-danger bg-danger-50 color-danger-900 border-danger"
+    role="alert"
+  >
+    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+  </div>
+
+  <p>Success</p>
+
+  <div
+    class="alert alert-success bg-success-50 color-success-900 border-success"
+    role="alert"
+  >
+    <strong>Well Done!</strong> You successfully read this important alert
+    message.
+  </div>
+
+  <p>Warning</p>
+
+  <div
+    class="alert alert-warning bg-warning-50 color-warning-900 border-warning"
+    role="alert"
+  >
+    <strong>Holy guacamole!</strong> You should check in on some of those fields
+    below.
+  </div>
+</div>
+
+<p-splitter
+  [style]="{ height: '300px' }"
+  [panelSizes]="[20, 80]"
+  [minSizes]="[10, 0]"
+  styleClass="mb-5"
+  layout="vertical"
+>
+  <ng-template pTemplate>
+    <p-splitter [panelSizes]="[15, 85]">
+      <ng-template pTemplate>
+        <div class="col flex align-items-center justify-content-center">
+          Panel 1
+        </div>
+      </ng-template>
+      <ng-template pTemplate>
+        <div class="col flex align-items-center justify-content-center">
+          Panel 3
+        </div>
+      </ng-template>
+    </p-splitter>
+  </ng-template>
+  <ng-template pTemplate
+    ><div class="col flex align-items-center justify-content-center">
+      Panel 2
+    </div></ng-template
+  >
+</p-splitter>
