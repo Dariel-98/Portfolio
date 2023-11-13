@@ -6,16 +6,32 @@
       </mat-form-field>
     </form>
 
-    <mat-list role="list">
-      <mat-list-item role="listitem">Item 1</mat-list-item>
-      <mat-list-item role="listitem">Item 2</mat-list-item>
-      <mat-list-item role="listitem">Item 3</mat-list-item>
-    </mat-list>
+    <mat-nav-list>
+      <a routerLink="./alerts" mat-list-item (click)="sidenav.toggle()">
+        <span>Alerts</span>
+      </a>
+
+      <a routerLink="./buttons" mat-list-item (click)="sidenav.toggle()">
+        <span>Buttons</span>
+      </a>
+
+      <a routerLink="./datatables" mat-list-item (click)="sidenav.toggle()">
+        <span>Datatables</span>
+      </a>
+
+      <a routerLink="./forms" mat-list-item (click)="sidenav.toggle()">
+        <span>Forms</span>
+      </a>
+    </mat-nav-list>
   </mat-sidenav>
   <mat-toolbar>
     <button mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>Company Portfolio Components</span>
+    <a routerLink="" mat-list-item>
+      <span>Company Portfolio Components</span>
+    </a>
   </mat-toolbar>
+
+  <router-outlet></router-outlet>
 </mat-sidenav-container>

@@ -4,10 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRouterModule } from './app-router.module';
+import { PagesModuleModule } from './pages/pages-module.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, SharedModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRouterModule,
+    SharedModule,
+    BrowserAnimationsModule,
+    PagesModuleModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
